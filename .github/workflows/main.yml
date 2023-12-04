@@ -1,5 +1,8 @@
-name: Auto approve
-on: pull_request_target
+name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
