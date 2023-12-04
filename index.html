@@ -25,23 +25,23 @@
         </a>
     </header>
 
-    <table id="example" class="table table-striped display" style="width:100%">
+    <table id="dataTable" class="table table-striped display" style="width:100%">
         <thead>
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Email</th>
             <th>Class</th>
-            <th>Github</th>
+            <th>GitHub</th>
+            <th>Dicoding</th>
         </tr>
         </thead>
         <tfoot>
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Email</th>
             <th>Class</th>
-            <th>Github</th>
+            <th>GitHub</th>
+            <th>Dicoding</th>
         </tr>
         </tfoot>
     </table>
@@ -57,7 +57,7 @@
 
 <script>
   $(document).ready(function () {
-    $('#example').DataTable({
+    $('#dataTable').DataTable({
       ajax: 'data.json',
     });
   });
